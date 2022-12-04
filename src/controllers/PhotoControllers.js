@@ -1,6 +1,13 @@
 const {Photo} = require("../models");
 
 module.exports = {
+  CreatePhoto : async (req,res) => {
+    try{
+    } catch {
+      
+    }
+  },
+  
   GetAllPhotos: async (req, res) => {
     try {
       Photo.findAll().then((result) => {
@@ -20,4 +27,5 @@ module.exports = {
       res.status(500).json(error.message);
     }
   },
+  
 };
